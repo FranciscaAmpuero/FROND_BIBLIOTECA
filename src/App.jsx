@@ -9,7 +9,7 @@ const App = () => {
 		<>
 			<CssBaseline />
 			<Router>
-				<Suspense fallback={<p>loading...</p>}>
+				<Suspense fallback={<p>Cargando...</p>}>
 					{renderRoutes(routes)}
 				</Suspense>
 			</Router>

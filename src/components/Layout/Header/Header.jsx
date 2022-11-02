@@ -14,6 +14,12 @@ const Header = ({ setOpen }) => {
                 </IconButton>
                 <Typography style={{ flexGrow: 1 }}>Biblioteca Ciisa </Typography>
                 <Button variant='text' color='inherit' onClick={() => {
+                    history.push('/app')
+                }}>Listado libros</Button>
+                <Button variant='text' color='inherit' onClick={() => {
+                    history.push('/prestamos')
+                }}>Prestamo de Libros</Button>
+                <Button variant='text' color='inherit' onClick={() => {
                     localStorage.clear()
                     history.push('/login')
                 }}>Log out</Button>
